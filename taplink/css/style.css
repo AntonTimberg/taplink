@@ -9,11 +9,18 @@ body {
 }
 
 .page-wrapper {
+  overflow: hidden;
   max-width: 375px;
   margin: auto;
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
+}
+
+.container {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 67px;
 }
 
 .header {
@@ -25,27 +32,104 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* box-shadow: none;  */
 }
 
 .hello {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .hello-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .user {
+  padding: 16px;
+  margin-top: -60px;
   text-align: center;
+  border-radius: 0;
   box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 0 0 16px 16px;
-  background-color: #ffffff;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  margin-bottom: 17px;
 }
 
 .user-avatar {
-    object-fit: cover;
+  object-fit: cover;
+  margin-top: -53px;
+}
+
+.user-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.user-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6a6a6a;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.card {
+  box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+  margin: auto;
+  gap: 10px;
+  
+}
+
+.button {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.button.vk {
+  background-color: #4c75a3;
+}
+
+.button.tg {
+  background-color: #37aee2;
+}
+
+.button.yt {
+  background: #e52d27;
+}
+
+.button.github {
+  text-decoration: none;
+  background: black;
+  text-width: 112.92px;
+  text-height: 13.63px;
+  gap: 10px;
+}
+
+.button.hh {
+  text-decoration: none;
+  background: #d6001c;
 }
